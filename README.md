@@ -15,6 +15,10 @@
 ```bash
 npm install
 ```
+3. 构建项目：
+```bash
+npm run build
+```
 
 ### 作为 CLI 全局安装（从 npm）
 
@@ -28,25 +32,13 @@ npm install -g mcp-for-ha-conversation
 mcp-for-ha-conversation
 ```
 
-## 构建和运行
-
-1. 构建项目：
-```bash
-npm run build
-```
-
-2. 运行服务器：
-```bash
-npm start
-```
-
 ## 使用方法
 
 ### 配置 Home Assistant
 
 1. 确保您的 Home Assistant 实例正在运行
 2. 创建一个长期访问令牌（在 Home Assistant 设置 > 长期访问令牌中）
-3. 记录您的 Home Assistant URL（通常是 http://localhost:8123）
+3. 提供您的 Home Assistant URL
 
 ### MCP 工具调用
 
@@ -79,7 +71,7 @@ npm start
         "HOME_ASSISTANT_URL": "http://localhost:8123",
         "HOME_ASSISTANT_TOKEN": "your_token_here",
         "HOME_ASSISTANT_AGENT_ID": "optional_agent_id",
-        "HOME_ASSISTANT_INSECURE": "true"
+        "HOME_ASSISTANT_INSECURE": "true"  //(optional)
       }
     }
   }
@@ -97,7 +89,7 @@ npm start
         "HOME_ASSISTANT_URL": "http://localhost:8123",
         "HOME_ASSISTANT_TOKEN": "your_token_here",
         "HOME_ASSISTANT_AGENT_ID": "optional_agent_id",
-        "HOME_ASSISTANT_INSECURE": "true"
+        "HOME_ASSISTANT_INSECURE": "true" //(optional)
       }
     }
   }

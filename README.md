@@ -78,7 +78,8 @@ npm start
       "env": {
         "HOME_ASSISTANT_URL": "http://localhost:8123",
         "HOME_ASSISTANT_TOKEN": "your_token_here",
-        "HOME_ASSISTANT_AGENT_ID": "optional_agent_id"
+        "HOME_ASSISTANT_AGENT_ID": "optional_agent_id",
+        "HOME_ASSISTANT_INSECURE": "true"
       }
     }
   }
@@ -94,7 +95,9 @@ npm start
       "command": "mcp-for-ha-conversation",
       "env": {
         "HOME_ASSISTANT_URL": "http://localhost:8123",
-        "HOME_ASSISTANT_TOKEN": "your_token_here"
+        "HOME_ASSISTANT_TOKEN": "your_token_here",
+        "HOME_ASSISTANT_AGENT_ID": "optional_agent_id",
+        "HOME_ASSISTANT_INSECURE": "true"
       }
     }
   }
@@ -106,20 +109,3 @@ npm start
 - 确保您的 Home Assistant 实例可以从运行此服务器的机器访问
 - 建议使用 HTTPS 来保护您的 Home Assistant 连接
 - 此服务器会缓存您的 Home Assistant 配置，重启后需要重新提供
-
-## 发布到 npm（维护者）
-
-1. 确保已登录 npm：
-```bash
-npm login
-```
-2. 构建并发布：
-```bash
-npm publish --access public
-```
-（若包名不在作用域下且首次发布，省略 `--access public`）
-
-如需先试发到测试标签：
-```bash
-npm publish --tag next
-```

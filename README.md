@@ -101,3 +101,5 @@ mcp-for-ha-conversation
 - 确保您的 Home Assistant 实例可以从运行此服务器的机器访问
 - 建议使用 HTTPS 来保护您的 Home Assistant 连接
 - 此服务器会缓存您的 Home Assistant 配置，重启后需要重新提供
+
+[![For Ha Conversation MCP on mcprush](https://mcprush.com/badge/for-ha-conversation-mcp/score.svg)](https://mcprush.com/to/for-ha-conversation-mcp?ref=badge)
